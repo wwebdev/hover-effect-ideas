@@ -1,0 +1,39 @@
+$gradientBg: rgba(0, 0, 0, 0) linear-gradient(57deg, rgb(0, 198, 167) 0%, rgb(30, 77, 146) 100%) repeat scroll 0% 0% / 200% 200%;
+
+@keyframes GradientAnimation {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+.gradient, .gradient-underline {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.gradient {
+  background: $gradientBg;
+  color: transparent;
+  background-clip: text;
+}
+
+.gradient:hover, .gradient-underline:hover::after {
+  animation: GradientAnimation 3s ease infinite;
+}
+
+.gradient-underline {
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.gradient-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 0px;
+  height: 10%;
+  width: 100%;
+  background: $gradientBg;
+  z-index: 0;
+}
