@@ -1,22 +1,7 @@
-# Static Website Template
+# Hover Effect Ideas [wip]
 
-This is a template for creating simple static websites without JS frameworks.
+This repo was created with the [static-website-template](https://github.com/wwebdev/static-website-template).
 
-A blog post explaining the process can be found on [wweb.dev](https://wweb.dev/blog/how-to-create-static-website-npm-scripts)
-
-It uses:
-- SCSS with linting and autoprefixer
-- JavaScript with webpack using babel and linting
-- minifying images
-- html partials and minify with post-html
-- browser-sync
-
-The compiled files will go to the directory "/dist"
-
-- from `src/scss` to `dist/index.css`
-- from `src/js` to `dist/bundle.js`
-- from `src/views` to `dist/`
-- from `src/images` to `dist/images`
 
 ## Getting Started
 
@@ -34,12 +19,6 @@ npm run build
 ```
 npm run watch
 ```
-
-## Demo
-
-Integrates smoothly with netlify:
-
-[https://static-website-template.netlify.com/](https://static-website-template.netlify.com/)
 
 
 ## License
