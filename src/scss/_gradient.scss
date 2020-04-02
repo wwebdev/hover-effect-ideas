@@ -1,14 +1,9 @@
-$gradientBg: rgba(0, 0, 0, 0) linear-gradient(57deg, rgb(0, 198, 167) 0%, rgb(30, 77, 146) 100%) repeat scroll 0% 0% / 200% 200%;
+$gradientBg: rgba(0, 0, 0, 0) $gradient repeat scroll 0% 0% / 200% 200%;
 
 @keyframes GradientAnimation {
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
   100% { background-position: 0% 50% }
-}
-
-.gradient, .gradient-underline {
-  font-size: 36px;
-  font-weight: bold;
 }
 
 .gradient {

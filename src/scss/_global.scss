@@ -13,7 +13,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: $subtleBg;
+    background-color: #000;
     color: $defaultFont;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -48,6 +48,11 @@ h2 {
     h1 {
         text-align: center;
     }
+}
+
+a {
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .demos {
