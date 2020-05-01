@@ -1,27 +1,15 @@
-.text-border, .text-border-slide {
+.text-border {
   text-decoration: none;
   animation-duration: 0.35s;
   animation-fill-mode: forwards;
 }
 
-.text-border:hover {
-  animation-name: textShadow;
-}
-
-@keyframes textShadow {
-  from {
-    text-shadow: 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000;
-  }
-
-  to {
-    text-shadow: -1px 0 $greenBlue, 0 1px $greenBlue, 1px 0 $greenBlue, 0 -1px $greenBlue;
-  }
-}
-
-.text-border-slide {
+.text-border {
   position: relative;
   white-space: nowrap;
-  text-shadow: -1px 0 $greenBlue, 0 1px $greenBlue, 1px 0 $greenBlue, 0 -1px $greenBlue;
+  text-shadow: -2px 0 $greenBlue, 0 2px $greenBlue, 2px 0 $greenBlue, 0 -2px $greenBlue;
+  width: 100%;
+  transition: width 0.5s ease;
 
   &::after {
     content: 'HOVER ME';
@@ -29,23 +17,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
   }
 
   &:hover {
-    animation-name: slideWidth;
-  }
-}
-
-@keyframes slideWidth {
-  from {
-    width: 100%;
-  }
-
-  to {
-    width: 0;
+    width: 0%;
   }
 }

@@ -12,23 +12,6 @@ $gradientBg: rgba(0, 0, 0, 0) $gradient repeat scroll 0% 0% / 200% 200%;
   background-clip: text;
 }
 
-.gradient:hover, .gradient-underline:hover::after {
-  animation: GradientAnimation 3s ease infinite;
-}
-
-.gradient-underline {
-  position: relative;
-  text-decoration: none;
-  z-index: 1;
-}
-
-.gradient-underline::after {
-  content: "";
-  position: absolute;
-  bottom: 10%;
-  left: 0px;
-  height: 10%;
-  width: 100%;
-  background: $gradientBg;
-  z-index: 0;
+.gradient:hover{
+  animation: GradientAnimation 2s ease infinite;
 }

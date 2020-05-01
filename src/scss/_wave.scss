@@ -1,0 +1,27 @@
+.wave {
+  color: transparent;
+  background: url("/images/wave.svg") repeat-x #fff;
+  background-clip: text;
+  background-size: 200% 100%;
+  background-position-x: 0;
+  background-position-y: $fontSize;
+  text-decoration: none;
+  transition: background-position-y 1s ease;
+  animation: waveAnimation 4s infinite linear;
+  animation-play-state: paused;
+
+  &:hover {
+    background-position-x: 0;
+    background-position-y: 0;
+    animation-play-state: running;
+  }
+
+  @keyframes waveAnimation{
+    from {
+        background-position-x: 0%;
+    }
+    to {
+        background-position-x: 200%;
+    }
+  }
+}
