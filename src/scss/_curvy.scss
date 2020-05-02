@@ -1,0 +1,26 @@
+$curvyColor: rgba(0,0,0,.5);
+
+.curvy {
+  background: radial-gradient(circle at 100% 50%, transparent 20%, $curvyColor 21%, $curvyColor 34%, transparent 35%, transparent),
+    radial-gradient(circle at 0% 50%, transparent 20%, $curvyColor 21%, $curvyColor 34%, transparent 35%, transparent) 0 -50px;
+  background-color: #fff;
+  background-size: 75px 100px;
+  background-clip: text;
+  background-repeat: repeat-x;
+  background-position-y: -$fontSize;
+  transition: background-position-y 0.6s ease;
+  color: transparent;
+  animation: curvyAnimation 3s linear infinite;
+  animation-play-state: paused;
+
+  &:hover {
+    animation-play-state: running;
+    background-position-y: 0%, -50px;
+  }
+
+  @keyframes curvyAnimation {
+    100% {
+      background-position-x: 150%;
+    }
+  }
+}

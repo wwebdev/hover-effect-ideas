@@ -1,0 +1,24 @@
+$stripeOneColor: rgb(241, 241, 241);
+$stripeTwoColor: rgb(128, 128, 128);
+$stripeThreeColor: rgb(190, 190, 190);
+
+.stripes2 {
+  position: relative;
+  color: transparent;
+  background-image: repeating-linear-gradient(45deg, $stripeOneColor 0px, $stripeOneColor 144px, $stripeTwoColor 144px, $stripeTwoColor 288px, $stripeThreeColor 288px, $stripeThreeColor 432px);
+  background-size: 250%;
+  background-position: 0%;
+  background-clip: text;
+  animation: stripeAnimation 3s linear infinite;
+  animation-play-state: paused;
+
+  &:hover {
+    animation-play-state: running;
+  }
+
+  @keyframes stripeAnimation {
+    100% {
+      background-position: 165%;
+    }
+  }
+}

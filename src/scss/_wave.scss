@@ -5,8 +5,7 @@
   background-size: 200% 100%;
   background-position-x: 0;
   background-position-y: $fontSize;
-  text-decoration: none;
-  transition: background-position-y 1s ease;
+  transition: background-position-y 0.6s ease;
   animation: waveAnimation 4s infinite linear;
   animation-play-state: paused;
 

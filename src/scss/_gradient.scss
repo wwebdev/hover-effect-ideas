@@ -1,4 +1,4 @@
-$gradientBg: rgba(0, 0, 0, 0) $gradient repeat scroll 0% 0% / 200% 200%;
+$gradientBg: rgba(0, 0, 0, 0) linear-gradient(90deg, hsl(141,81%,76%),hsl(186,81%,76%),hsl(231,81%,76%),hsl(276,81%,76%),hsl(321,81%,76%),hsl(6,81%,76%),hsl(51,81%,76%),hsl(96,81%,76%)) repeat scroll 0% 0% / 200% 200%;
 
 @keyframes GradientAnimation {
   0% { background-position: 0% 50% }
