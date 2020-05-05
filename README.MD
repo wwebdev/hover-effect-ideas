@@ -1,6 +1,8 @@
-# Hover Effect Ideas [wip]
+# Hover Effect Ideas
 
 This repo was created with the [static-website-template](https://github.com/wwebdev/static-website-template).
+
+You can see the hover effects in action on [https://wweb.dev/resources/creative-hover-effects](https://wweb.dev/resources/creative-hover-effects).
 
 
 ## Getting Started
