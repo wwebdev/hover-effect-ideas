@@ -29,7 +29,7 @@
     "@babel/preset-env": "^7.8.4",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.29.1",
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.3",
     "htmlnano": "^0.2.5",
